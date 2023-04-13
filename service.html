@@ -12,7 +12,7 @@
   		<link rel="stylesheet" href="stylesheet/style.css">
   		<style type="text/css">
   			ul{
-  				list-style-type: none
+  				list-style-type: circle;
   			}
   			.carousel-item {
   				height: 400px;
@@ -23,11 +23,19 @@
     			-o-background-size: cover;
     			background-size: cover;
   			}
+			#jobservices{
+				width: 40rem;
+				background-color: #B3E5FC;
+				border-style: ridge;
+			}
+			.card-img-top{
+				height: 350px;			
+			}
   		</style>
-  		
+	
 	</head>
 	<body>
-		<div title="header" id="header">
+		<div title="header" id="header">	
     		<nav class="navbar navbar-light navbar-expand-lg">
       			<img class="navbar-brand" src="img/Picture_1.png" height="100" width="200" alt="Aupatelecom Logo">
       			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
@@ -53,207 +61,203 @@
     		</nav>
   		</div>
 
-  		<section class="p-4">
+  		<section id="slideshow" >
 			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 				<ol class="carousel-indicators">
-				  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-				  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-				  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				  	<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				  	<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				  	<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
 				</ol>
 				<div class="carousel-inner">
-				  <div class="carousel-item active">
-					<img class="d-block w-100" src="img/Picture 1.jpg" height="500px" width="100%" alt="First slide">
-					<div class="carousel-caption d-none d-md-block">
-    					<h5>First</h5>
-    					<p>Describing</p>
-  					</div>
-
-				  </div>
-				  <div class="carousel-item">
-					<img class="d-block w-100" src="img/instaSola.webp" height="500px" width="100%" alt="Second slide">
-					<div class="carousel-caption d-none d-md-block">
-    					<h5>Second</h5>
-    					<p>Describing</p>
-  					</div>
-				  </div>
-				  <div class="carousel-item">
-					<img class="d-block w-100" src="img/Solar.jpeg" height="500px" width="100%" alt="Third slide">
-					<div class="carousel-caption d-none d-md-block">
-    					<h5>Third</h5>
-    					<p>Describing</p>
-  					</div>
-				  </div>
+				  	<div class="carousel-item active">
+						<img class="d-block w-100" src="img/oursolar.jpg" height="500px" width="100%" alt="First slide">
+						<div class="carousel-caption d-none d-md-block">
+    						<h5>First</h5>
+    						<p>Describing</p>
+  						</div>
+				  	</div>
+					
+					<div class="carousel-item">
+						<img class="d-block w-100" src="img/instaSola.webp" height="500px" width="100%" alt="Second slide">
+						<div class="carousel-caption d-none d-md-block">
+    						<h5>Second</h5>
+    						<p>Describing</p>
+  						</div>
+				  	</div>
+				  	<div class="carousel-item">
+						<img class="d-block w-100" src="img/Solar.jpeg" height="500px" width="100%" alt="Third slide">
+						<div class="carousel-caption d-none d-md-block">
+    						<h5>Third</h5>
+    						<p>Describing</p>
+  						</div>
+				  	</div>
 				</div>
+
 				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				  <span class="sr-only">Previous</span>
+				  	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  	<span class="sr-only">Previous</span>
 				</a>
 				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-				  <span class="sr-only">Next</span>
+				  	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  	<span class="sr-only">Next</span>
 				</a>
-			  </div>
-  			<!--<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-    			<div class="carousel-indicators">
-      				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    			</div>
-    			<div class="carousel-inner">
-      				<div class="carousel-item active" style="background-image: url('img/Picture 1.jpg'); height: 500px; width: 100%;">
-        				<div class="carousel-caption">
-         			 		<h5>First slide label</h5>
-          					<p>Some representative placeholder content for the first slide.</p>
-        				</div>
-      				</div>
-      				<div class="carousel-item active" style="background-image: url('img/Solar.jpeg'); height: 500px; width: 100%;">
-        				<div class="carousel-caption">
-         			 		<h5>second slide label</h5>
-          					<p>Some representative placeholder content for the first slide.</p>
-        				</div>
-      				</div>
-      				<div class="carousel-item active" style="background-image: url('img/instaSola.webp'); height: 500px; width: 100%;">
-        				<div class="carousel-caption">
-         			 		<h5>third slide label</h5>
-          					<p>Some representative placeholder content for the first slide.</p>
-        				</div>
-      				</div>
-    			</div>
-    			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      				<span class="visually-hidden">Previous</span>
-    			</button>
-    			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-      				<span class="visually-hidden">Next</span>
-    			</button>
-  			</div>-->
+			</div>
   		</section>
 
   		<section id="services">
   			<div class="container-fluid">
-          		<div class="row ${1| , auto,justify-content-md-center,|}">
-          			<div class="text-center">
-          				<h3>SERVICES WE PROVIDE</h3>
-						<h6>WE HAVE WORKED WITH VARIOUS PARTNERS WITHIN THE
-							TELECOM INDUSTRY UNDER MTN-IHS-VODACOM-TELKOM
-						</h6>
+				<!--Testing Space Start-->
+				<div class="row ${1| , auto,justify-content-md-center, text-center,|}">
+					<div class="w-100 text-center pb-2" style="background-color: #B3E5FC;">
+						<h3>Environment we have worked in:<br></h3>
+					  	<h6>We have worked in all 9 provinces in various Region for various telecom partners.
+							We ready to deploy our services and multiple Regions immediately.
+					  	</h6>
+				  	</div>
+					<div class="card-deck" style="margin: 0px 5px 0px 5px;">
+						<div class="row ${1| , auto,justify-content-md-center, justify-content-sm-center, text-center,|}">
+							<div id="jobservices" class="card mb-1" >
+								<img class="card-img-top rounded-circle" src="img/rectifier.jpg" alt="Card image cap">
+								<div class="card-body">
+								  	<h5 class="card-title">Power:</h5>
+								 	<p class="card-text">
+									  	<ul>
+										  	<li>Rectifier Installations & Upgrades</li>
+										  	<li>Solar Power (with PV Green Card accreditation)</li>
+										  	<li>Battery upgrade and Epoxy Installation</li>
+											<li>CK100, LMS- Load Management Systems</li>
+										  	<li>Qpower Smart Load Disconnect Inst</li>
+										  	<li>AC Meter Installations</li>
+										  	<li>Container Reticulations</li>
+									  	</ul>
+								  	</p>
+								</div>
+							</div>
+							<div id="jobservices" class="card mb-1">
+								<img class="card-img-top rounded-circle" src="img/secure.jpg" alt="Card image cap">
+								<div class="card-body">
+								  	<h5 class="card-title">SERVICES:</h5>
+								 	<p class="card-text">
+									  	<ul>
+										  	<li>Rectifier Installations & Upgrades</li>
+										  	<li>Battery upgrade and Epoxy Installation</li>
+										  	<li>Site Alarm Upgrade and Commissioning</li>
+											<li>Access Control and Camera Installations</li>
+										  	<li>CK100, LMS and AC Meter Installations</li>
+										  	<li>RF Maintenance</li>
+										  	<li>DAS & In-building Installations</li>
+										  	<li>Solar Panels and Back-up Power Installations</li>
+										  	<li>Aircon swaps & Service</li>
+										  	<li>Vandalism Repairs (Container & Epoxy Damage Repairs)
+										  	<li>Container Cladding</li>
+									  	</ul>
+								  	</p>
+								</div>
+							</div>
+							<div id="jobservices" class="card mb-1">
+								<img class="card-img-top rounded-circle" src="img/epoxy.jpg" alt="Card image cap">
+								<div class="card-body">
+								  	<h5 class="card-title">SUPPLY:</h5>
+								 	<p class="card-text">
+									  	<ul>
+										  	<li>High MPA Epoxy Supply (114MPA)
+										  	<li>Heavy Duty Indoor Cabinet (Requires Epoxy)
+										  	<li>Heavy Duty Outdoor Battery Cabinet Supply
+											<li>Lithium Battery Remote Monitoring Devices
+										  	<li>Aircon, Batteries, Generators, Security Monitoring Device (Modems & IOT)
+										  	<li>Battery Theft early Detection Sensors
+										  	<li>Site Alarm Supply
+										  	<li>Wireless Camera Supply
+										  	<li>Single Phase and 3 Phase AC Meter Supply</li>
+									  	</ul>
+								  	</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div id="jobservices" class="card">
+								<img class="card-img-top rounded-circle" src="img/containerrepair.jpg" alt="Card image cap">
+								<div class="card-body">
+								  	<h5 class="card-title">Maintenance:</h5>
+								 	<p class="card-text">
+									  	<ul>
+										  	<li>Site Cleaning & Fencing</li>
+										  	<li>Aircon New Installations/Swaps & Service</li>
+										  	<li>Vandalism Repair</li>
+											<li>Container Repairs</li>
+										  	<li>Container Cladding</li>
+										  	<li>Epoxy Damage Repairs</li>
+										  	<li>Solar Panels Upgrade</li>
+									  	</ul>
+								  	</p>
+								</div>
+							</div>
+							<div id="jobservices" class="card">
+								<img class="card-img-top rounded-circle" src="img/RF.jpg" alt="Card image cap">
+								<div class="card-body">
+								  	<h5 class="card-title">RF:</h5>
+								 	<p class="card-text">
+									  	<ul>
+										  	<li>RF Maintenance</li>
+										  	<li>DAS & In-building Installations</li>
+										  	<li>BTS Cabinet installations/de-installations</li>
+											<li>Tx equipment installations</li>
+									  </ul>
+								  </p>
+								</div>
+							</div>
+							<div id="jobservices" class="card">
+								<img class="card-img-top rounded-circle" src="img/camera.jpg" alt="Card image cap">
+								<div class="card-body">
+								  	<h5 class="card-title">Security:</h5>
+								 	<p class="card-text">
+									  	<ul>
+										  	<li>Site Alarm (RAMS/RAPTOR/SAM/CK) Installations</li>
+										  	<li>CCTV Installations/Deinstallations/Maintenance</li>
+										  	<li>Access Control and Camera Installations</li>
+									  	</ul>
+								  	</p>
+								</div>
+							</div>
+						</div>
 					</div>
-            		<div class="col-lg-6 col-md-8 text-center">
-              			
-              			<p>
-              				<strong>Power:</strong>
-              				<ul>
-              					<li>Rectifier Installations & Upgrades</li>
-              					<li>Solar Power (with PV Green Card accreditation)</li>
-              					<li>Battery upgrade and Epoxy Installation</li>
-              					<li>CK100, LMS- Load Management Systems</li>
-              					<li>Qpower Smart Load Disconnect Inst</li>
-              					<li>AC Meter Installations</li>
-              					<li>Container Reticulations</li>
-              				</ul>
-              				<strong>RF:</strong>
-              				<ul>
-              					<li>RF Maintenance</li>
-              					<li>DAS & In-building Installations</li>
-              					<li>BTS Cabinet installations/de-installations</li>
-								<li>Tx equipment installations</li>
-              				</ul>
-              				<strong>Security:</strong>
-              				<ul>
-              					<li>Site Alarm (RAMS/RAPTOR/SAM/CK) Installations</li>
-              					<li>CCTV Installations/Deinstallations/Maintenance</li>
-              					<li>Access Control and Camera Installations</li>
-              				</ul>
-              				<strong>Maintenance:</strong>
-              				<ul>
-              					<li>Site Cleaning & Fencing</li>
-              					<li>Aircon New Installations/Swaps & Service</li>
-              					<li>Vandalism Repair</li>
-              					<li>Container Repairs</li>
-              					<li>Container Cladding</li>
-              					<li>Epoxy Damage Repairs</li>
-              					<li>Solar Panels Upgrade</li>
-              				</ul>
-              				
-              			</p>
-            		</div>
-            		<div class="col-lg-4 col-md-8 text-center">
-              			<p>
-              				<strong>SERVICES:</strong>
-              				<ul>
-              					<li>Rectifier Installations & Upgrades</li>
-              					<li>Battery upgrade and Epoxy Installation</li>
-              					<li>Site Alarm Upgrade and Commissioning</li>
-              					<li>Access Control and Camera Installations</li>
-              					<li>CK100, LMS and AC Meter Installations</li>
-              					<li>RF Maintenance</li>
-              					<li>DAS & In-building Installations</li>
-              					<li>Solar Panels and Back-up Power Installations</li>
-              					<li>Aircon swaps & Service</li>
-              					<li>Vandalism Repairs (Container & Epoxy Damage Repairs)
-              					<li>Container Cladding</li>
-              				</ul>
-              				<strong>SUPPLY:</strong>
-              				<ul>
-              					<li>High MPA Epoxy Supply (114MPA)
-              					<li>Heavy Duty Indoor Cabinet (Requires Epoxy)
-              					<li>Heavy Duty Outdoor Battery Cabinet Supply
-              					<li>Lithium Battery Remote Monitoring Devices
-              					<li>Aircon, Batteries, Generators, Security Monitoring Device (Modems & IOT)
-              					<li>Battery Theft early Detection Sensors
-              					<li>Site Alarm Supply
-              					<li>Wireless Camera Supply
-              					<li>Single Phase and 3 Phase AC Meter Supply</li>
-              				</ul>
-              			</p>
-            		</div>
-            		<div class="text-center">
-          				<h3>Environment we have worked in:<br></h3>
-						<h6>We have worked in all 9 provinces in various Region for various telecom partners.
-              				We ready to deploy our services and multiple Regions immediately.
-						</h6>
-					</div>
-          		</div>
+				</div>
+				<!--Testing Space Ends-->
         	</div>
   		</section>
-
-  		<footer class="text-center text-lg-start bg-white text-muted">
-    		<!--<section>
-      			<div class="container text-center text-md-start mt-5">
-        			<div class="row mt-3">
-          				<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            				<h6 class="text-uppercase fw-bold mb-4">
-              					AUPATELECOM (PTY) LTD
-            				</h6>
-            				<p>
-              					<h6 class="text-uppercase fw-bold">COMPANY REGISTRATION:</h6> 2012/171658/07<br><br>
-              					<h6 class="text-uppercase fw-bold">CSD SUPPLIER NUMBER:</h6> MAAA082408
-              					<br><br>
-              					<h6 class="text-uppercase fw-bold">TEL:</h6> 0616784473 
-              					<br><br>
-            				</p>
-          				</div>
-          				<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            				<h6 class="text-uppercase fw-bold mb-4">Contact:</h6>
-            				<p> 99 Theuns Street, Centurion, GP, 0157, South Africa <br>
-              					<h6 class="text-uppercase fw-bold">AUPA MAKHOBOTLELA:</h6>
-              					Aupa@aupatelecom.co.za <br>
-              					+27 83 287 0659 <br><br>
-              					<h6 class="text-uppercase fw-bold">DONALD PULE:</h6>
-              					Qpower@aupatelecom.co.za <br>
-              					+27 82 997 3321
-          					</p>
-          				</div>
-        			</div>
-      			</div>
-    		</section>-->
-    		<div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
-      			<p>
-      				©2022 Copyright: Program-World
-      			</p>
-    		</div>
-  		</footer>
+		<!--CLient test-->
+		<section id="clientcollab">
+			<div style="text-align: center; background-color: #E1F5FE;">
+				<h3>SERVICES WE PROVIDE</h3>
+				<h6>WE HAVE WORKED WITH VARIOUS PARTNERS WITHIN THE
+				  	TELECOM INDUSTRY UNDER MTN-IHS-VODACOM-TELKOM
+				</h6>
+				<ul class="thumbnailsform" style="list-style-type: none; border-image: none;">
+					<li class="span5">
+						<a href="#" class="thumbnail m-2 p-1"><img src="img/logos/comsol.png" height="100" width="150"/></a>
+					 	<a href="#" class="thumbnail m-2 p-1"><img src="img/logos/mtn.png" height="100" width="150"/></a>
+					 	<a href="#" class="thumbnail m-2 p-1"><img src="img/logos/vodacom.png" height="100" width="150"/></a>
+					 	<a href="#" class="thumbnail m-2 p-1"><img src="img/logos/hohm.png" height="100" width="150"/></a>
+					 	<a href="#" class="thumbnail m-2 p-1"><img src="img/logos/levelx.png" height="100" width="150"/></a>
+					 	<a href="#" class="thumbnail m-2 p-1"><img src="img/logos/maredi.png" height="100" width="150"/></a>
+					 	<a href="#" class="thumbnail m-2 p-1"><img src="img/logos/ihs.png" height="100" width="150"/></a>
+					 	<a href="#" class="thumbnail m-2 p-1"><img src="img/logos/iot.png" height="100" width="150"/></a>
+						<a href="#" class="thumbnail m-2 p-1"><img src="img/logos/telkom.png" height="100" width="150"/></a>
+					</li>
+				 </ul>
+				 <div title="footer" class="text-center text-lg-start text-muted pb-4" style="background-color: #E1F5FE;">
+					<!-- Copyright -->
+					<div class="text-center">
+					  <p>
+						©2022 Copyright by Program-World
+					  </p>
+					</div>
+				  </div>
+			</div>
+		</section>
+		<!--CLiend End Test-->
+		
 
   		<!-- Optional JavaScript -->
   		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
